@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICSE PW Students</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+header{
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+}
+
+header h1{
+font-size:2.2rem;
+}
+
+header p{
+margin-top:8px;
+opacity:.8;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:15px;
+flex-wrap:wrap;
+background:rgba(0,0,0,0.2);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:8px 15px;
+border-radius:20px;
+background:rgba(255,255,255,0.1);
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:2rem;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.section-title{
+margin:25px 0 15px;
+font-size:1.6rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+padding:20px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.student-img{
+width:80px;
+height:80px;
+border-radius:50%;
+display:block;
+margin:auto;
+}
+
+.student-name{
+text-align:center;
+margin-top:10px;
+font-weight:bold;
+}
+
+.status{
+text-align:center;
+color:#7CFC00;
+}
+
+.btn{
+display:block;
+width:100%;
+margin-top:12px;
+padding:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.notes-box{
+background:rgba(255,255,255,0.12);
+padding:20px;
+border-radius:20px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+}
+
+.chat-container{
+background:rgba(255,255,255,0.12);
+padding:20px;
+border-radius:20px;
+}
+
+.chat-list{
+margin-bottom:20px;
+}
+
+.chat-user{
+display:flex;
+align-items:center;
+gap:12px;
+padding:12px;
+background:rgba(255,255,255,0.08);
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.chat-user img{
+width:50px;
+height:50px;
+border-radius:50%;
+}
+
+.chat-box{
+height:220px;
+overflow-y:auto;
+background:rgba(0,0,0,0.2);
+padding:10px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.message{
+padding:8px;
+margin:8px 0;
+background:#2563eb;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+margin-top:30px;
+background:rgba(0,0,0,0.25);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ICSE PW Students</h1>
+<p>Study • Share Notes • Connect with Students</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Students</a>
+<a href="#">Notes</a>
+<a href="#">Private Chat</a>
+<a href="#">Leaderboard</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to ICSE PW Students</h2>
+<p>Upload Notes, Meet Friends and Learn Together</p>
+<button>Join Community</button>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Featured Students</h2>
+
+<div class="grid">
+
+<div class="card">
+<img class="student-img" src="https://via.placeholder.com/80">
+<div class="student-name">Ayush Kumar</div>
+<div class="status">🟢 Online</div>
+<button class="btn">View Profile</button>
+</div>
+
+<div class="card">
+<img class="student-img" src="https://via.placeholder.com/80">
+<div class="student-name">Rahul Sharma</div>
+<div class="status">🟢 Online</div>
+<button class="btn">View Profile</button>
+</div>
+
+<div class="card">
+<img class="student-img" src="https://via.placeholder.com/80">
+<div class="student-name">Priya Singh</div>
+<div class="status">🔴 Offline</div>
+<button class="btn">View Profile</button>
+</div>
+
+</div>
+
+<h2 class="section-title">Upload Notes</h2>
+
+<div class="notes-box">
+<input type="text" placeholder="Subject Name">
+<input type="file">
+<button class="btn">Upload Notes</button>
+</div>
+
+<h2 class="section-title">Private Chat</h2>
+
+<div class="chat-container">
+
+<div class="chat-list">
+
+<div class="chat-user">
+<img src="https://via.placeholder.com/50">
+<div>
+<b>Rahul Sharma</b><br>
+🟢 Online
+</div>
+</div>
+
+<div class="chat-user">
+<img src="https://via.placeholder.com/50">
+<div>
+<b>Priya Singh</b><br>
+🔴 Offline
+</div>
+</div>
+
+</div>
+
+<div class="chat-box" id="chatBox">
+<div class="message">Welcome to Private Chat</div>
+</div>
+
+<input type="text" id="msg" placeholder="Type message...">
+<button class="btn" onclick="sendMessage()">Send</button>
+
+</div>
+
+<h2 class="section-title">Leaderboard</h2>
+
+<div class="grid">
+
+<div class="card">
+🥇 Ayush Kumar<br>
+150 Notes Shared
+</div>
+
+<div class="card">
+🥈 Rahul Sharma<br>
+120 Notes Shared
+</div>
+
+<div class="card">
+🥉 Priya Singh<br>
+90 Notes Shared
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 ICSE PW Students | Student Learning Community
+</footer>
+
+<script>
+function sendMessage(){
+let msg=document.getElementById("msg").value;
+if(msg.trim()!=""){
+document.getElementById("chatBox").innerHTML +=
+'<div class="message">'+msg+'</div>';
+document.getElementById("msg").value="";
+}
+}
+</script>
+
+</body>
+</html>
