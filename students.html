@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Students - ICSE PW Students</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+margin:0;
+}
+
+header{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+padding:20px;
+text-align:center;
+}
+
+.container{
+padding:20px;
+}
+
+.search{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.avatar{
+width:80px;
+height:80px;
+border-radius:50%;
+background:#2563eb;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+}
+
+.online{
+color:#22c55e;
+font-weight:bold;
+}
+
+button{
+margin-top:10px;
+padding:10px 15px;
+border:none;
+border-radius:8px;
+background:#2563eb;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Students Directory</h1>
+<p>Find and connect with students</p>
+</header>
+
+<div class="container">
+
+<input class="search" placeholder="Search students...">
+
+<div class="grid">
+
+<div class="card">
+<div class="avatar">A</div>
+<h3>Ayush Kumar</h3>
+<p>Class 10 ICSE</p>
+<p class="online">🟢 Online</p>
+<button>View Profile</button>
+</div>
+
+<div class="card">
+<div class="avatar">R</div>
+<h3>Rahul Sharma</h3>
+<p>Class 10 ICSE</p>
+<p class="online">🟢 Online</p>
+<button>View Profile</button>
+</div>
+
+<div class="card">
+<div class="avatar">P</div>
+<h3>Priya Singh</h3>
+<p>Class 10 ICSE</p>
+<p>⚪ Offline</p>
+<button>View Profile</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
